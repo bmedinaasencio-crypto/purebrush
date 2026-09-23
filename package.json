@@ -4,7 +4,7 @@
   "description": "Horizon Shopify Theme for Pure Brush Studio",
   "scripts": {
     "dev": "shopify theme dev --store purebrushstudio.myshopify.com --open",
-    "push": "shopify theme push --store purebrushstudio.myshopify.com",
+    "push": "shopify theme push --store purebrushstudio.myshopify.com --live --allow-live",
     "pull": "shopify theme pull --store purebrushstudio.myshopify.com",
     "check": "shopify theme check"
   },
