@@ -1,0 +1,306 @@
+{% comment %}
+  Section: Pure Brush Hero
+  High-converting Hero section tailored for Pure Brush cleaner
+{% endcomment %}
+
+<div class="purebrush-hero-wrapper" style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  <div class="purebrush-hero-container">
+    <div class="purebrush-hero-content">
+      <div class="purebrush-rating-pill">
+        <span class="stars">★★★★★</span>
+        <span class="rating-text">4.9/5 · Más de 1.200 clientas satisfechas</span>
+      </div>
+
+      <h1 class="purebrush-hero-title">
+        Brochas 100% limpias y secas en <span>30 segundos</span>
+      </h1>
+
+      <p class="purebrush-hero-subtitle">
+        Elimina en segundos el 99,9% de bacterias, grasa y restos de maquillaje viejo acumulado. Protege tus poros del acné y mantén tus brochas impecables sin esperas de secado.
+      </p>
+
+      <ul class="purebrush-hero-bullets">
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Limpieza + Secado automático:</strong> listas para usar al instante.</span>
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Cuida tu piel:</strong> previene brotes, puntos negros e irritaciones.</span>
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>USB Plug & Play:</strong> compatible con cualquier cargador, sin pilas.</span>
+        </li>
+      </ul>
+
+      <div class="purebrush-hero-pricing">
+        <div class="price-box">
+          <span class="current-price">17,90 €</span>
+          <span class="compare-price">35,90 €</span>
+          <span class="discount-badge">-50% DTO</span>
+        </div>
+        <p class="scarcity-text">⚡ <strong>Oferta especial activa:</strong> Quedan menos de 14 unidades a este precio.</p>
+      </div>
+
+      <div class="purebrush-hero-cta">
+        <a href="#comprar" class="purebrush-btn-primary">
+          <span>PEDIR AHORA CON 50% DTO.</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="purebrush-guarantees-mini">
+        <span>🔒 Pago 100% Seguro</span>
+        <span>🚚 Envío Rápido</span>
+        <span>🔄 Garantía 30 Días</span>
+      </div>
+    </div>
+
+    <div class="purebrush-hero-media">
+      <div class="purebrush-media-frame">
+        <img 
+          src="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S38e01e7595ce4f63ba393d25a761b9c0s.webp?v=1789690472" 
+          alt="Limpiador eléctrico de brochas Pure Brush" 
+          class="purebrush-main-img"
+          loading="eager"
+          width="600"
+          height="600"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.purebrush-hero-wrapper {
+  padding: 48px 20px;
+  overflow: hidden;
+  font-family: inherit;
+}
+.purebrush-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+.purebrush-rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fdf2f4;
+  color: #b7324c;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.purebrush-rating-pill .stars {
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+.purebrush-hero-title {
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+.purebrush-hero-title span {
+  background: linear-gradient(135deg, #e11d48, #be185d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.purebrush-hero-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 0 24px 0;
+}
+.purebrush-hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.purebrush-hero-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+.purebrush-hero-bullets li svg {
+  color: #10b981;
+  flex-shrink: 0;
+}
+.purebrush-hero-pricing {
+  margin-bottom: 24px;
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px dashed #e5e7eb;
+}
+.purebrush-hero-pricing .price-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.purebrush-hero-pricing .current-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+}
+.purebrush-hero-pricing .compare-price {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+.purebrush-hero-pricing .discount-badge {
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+.scarcity-text {
+  font-size: 0.85rem;
+  color: #b91c1c;
+  margin: 0;
+}
+.purebrush-hero-cta {
+  margin-bottom: 18px;
+}
+.purebrush-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #111827;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.purebrush-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -5px rgba(0, 0, 0, 0.35);
+  background: #000000;
+}
+.purebrush-guarantees-mini {
+  display: flex;
+  gap: 18px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+.purebrush-hero-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.purebrush-media-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: visible;
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.12);
+  border: 1px solid #f3f4f6;
+}
+.purebrush-main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+  object-fit: cover;
+}
+.purebrush-floating-badge {
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e5e7eb;
+}
+.purebrush-floating-badge .badge-icon {
+  font-size: 1.5rem;
+}
+.purebrush-floating-badge strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #111827;
+}
+.purebrush-floating-badge small {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .purebrush-hero-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .purebrush-hero-media {
+    order: -1;
+  }
+  .purebrush-media-frame {
+    max-width: 360px;
+  }
+  .purebrush-floating-badge {
+    left: 10px;
+    bottom: -15px;
+  }
+  .purebrush-btn-primary {
+    max-width: 100%;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "PureBrush Hero",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Color de fondo",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color de texto",
+      "default": "#111827"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PureBrush Hero"
+    }
+  ]
+}
+{% endschema %}

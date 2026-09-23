@@ -1,0 +1,139 @@
+{% comment %}
+  Section: Pure Brush How It Works
+{% endcomment %}
+
+<div class="purebrush-steps-wrapper">
+  <div class="purebrush-steps-container">
+    <div class="purebrush-steps-header">
+      <span class="sub-badge">FÁCIL Y RÁPIDO</span>
+      <h2 class="section-title">¿Cómo funciona Pure Brush en 3 sencillos pasos?</h2>
+      <p class="section-desc">Sin complicaciones, sin enchufes raros y sin salpicaduras. Diseñado para tu rutina diaria.</p>
+    </div>
+
+    <div class="purebrush-steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+        </div>
+        <h3>Prepara el agua</h3>
+        <p>Llena el recipiente con agua tibia y agrega unas gotas de tu jabón o limpiador facial habitual.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Gira y Limpia</h3>
+        <p>Inserta la brocha en el collar de silicona, sumérgela y pulsa el botón durante 15 a 30 segundos.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Centrifuga y Lista</h3>
+        <p>Eleva la brocha sobre el agua y activa el giro unos segundos más para secarla al 100%. ¡Lista para usar!</p>
+      </div>
+    </div>
+
+    <div class="purebrush-steps-footer">
+      <a href="#comprar" class="purebrush-btn-primary">QUIERO PROBARLO AHORA - 17,90 €</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.purebrush-steps-wrapper {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+.purebrush-steps-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.purebrush-steps-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 60px auto;
+}
+.purebrush-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+}
+.step-card {
+  position: relative;
+  background: #fdfafb;
+  border: 1px solid #fce7eb;
+  padding: 40px 28px;
+  border-radius: 24px;
+  text-align: center;
+}
+.step-number {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  background: #111827;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.step-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #e11d48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(225, 29, 72, 0.12);
+}
+.step-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+.step-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+.purebrush-steps-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 850px) {
+  .purebrush-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "PureBrush How It Works",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PureBrush How It Works"
+    }
+  ]
+}
+{% endschema %}

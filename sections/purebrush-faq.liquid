@@ -1,0 +1,142 @@
+{% comment %}
+  Section: Pure Brush FAQ Accordion
+{% endcomment %}
+
+<div class="purebrush-faq-section">
+  <div class="purebrush-faq-container">
+    <div class="faq-header">
+      <span class="sub-badge">PREGUNTAS FRECUENTES</span>
+      <h2 class="section-title">¿Tienes dudas? Te las resolvemos</h2>
+      <p class="section-desc">Todo lo que necesitas saber antes de estrenar tu Pure Brush.</p>
+    </div>
+
+    <div class="faq-accordion">
+      <details class="faq-item" open>
+        <summary class="faq-question">
+          <span>¿Sirve para todo tipo y grosor de brochas?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>¡Sí! El adaptador superior está fabricado con silicona elástica de grado médico con ranuras adaptables que sujetan firmemente desde las brochas más finas de ojos y cejas hasta las más gruesas de polvos, base y colorete.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>¿Cómo se alimenta? ¿Necesita pilas?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>No necesita pilas ni baterías que se degraden. Viene con su cable USB universal que puedes conectar a cualquier cargador de móvil, ordenador portátil o batería portátil (powerbank) para usarlo en cualquier lugar.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>¿Puede estropear o deformar las cerdas?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Al contrario: el frotado manual sobre toallas o esponjas abrasivas es lo que suele quebrar las cerdas. Pure Brush utiliza un movimiento de rotación suave y continuo que limpia entre las fibras sin doblar el núcleo de la brocha, alargando notablemente su vida útil.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>¿Qué jabón debo utilizar?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Puedes usar agua tibia con unas gotas de tu jabón neutro habitual, champú de bebé o limpiador específico para brochas. No requiere productos químicos costosos.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>¿Qué garantía tengo si no me convence?</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Ofrecemos 30 días de garantía total de devolución. Si por cualquier motivo no estás 100% satisfecha con los resultados, te devolvemos el dinero sin hacer preguntas complicadas.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+
+<style>
+.purebrush-faq-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+.purebrush-faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.faq-item[open] {
+  background: #ffffff;
+  border-color: #111827;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+.faq-chevron {
+  transition: transform 0.25s ease;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+  color: #111827;
+}
+.faq-answer {
+  padding: 0 24px 24px 24px;
+}
+.faq-answer p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #4b5563;
+}
+</style>
+
+{% schema %}
+{
+  "name": "PureBrush FAQ",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PureBrush FAQ"
+    }
+  ]
+}
+{% endschema %}

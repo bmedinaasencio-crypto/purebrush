@@ -1,0 +1,41 @@
+{%- doc -%}
+  Renders the translated/customized menu title based on current language.
+  @param {string} [title] - The title of the link (optional override)
+  @param {object} [link] - The link object
+{%- enddoc -%}
+{%- liquid
+  assign link_title = title | default: link.title
+  assign title_clean = link_title | strip
+  assign title_down = title_clean | downcase
+
+  # Detect active language: prefer Shopify localization, fallback to request locale
+  assign active_lang = localization.language.iso_code | default: request.locale.iso_code
+  assign is_en = false
+  if active_lang contains 'en'
+    assign is_en = true
+  endif
+
+  if is_en
+    case title_down
+      when 'casa', 'inicio', 'home'
+        echo 'Home'
+      when 'productos', 'catálogo', 'catalogo', 'catalog', 'products'
+        echo 'Catalog'
+      when 'contacto', 'contact'
+        echo 'Contact'
+      else
+        echo link_title | escape
+    endcase
+  else
+    case title_down
+      when 'home', 'inicio', 'casa'
+        echo 'Casa'
+      when 'catalog', 'catálogo', 'catalogo', 'productos', 'products'
+        echo 'Productos'
+      when 'contact', 'contacto'
+        echo 'Contacto'
+      else
+        echo link_title | escape
+    endcase
+  endif
+-%}

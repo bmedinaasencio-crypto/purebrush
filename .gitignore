@@ -1,0 +1,5 @@
+# Shopify dev
+.shopify/
+node_modules/
+*.log
+*.zip

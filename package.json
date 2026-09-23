@@ -1,0 +1,14 @@
+{
+  "name": "purebrushstudio-horizon-theme",
+  "version": "1.0.0",
+  "description": "Horizon Shopify Theme for Pure Brush Studio",
+  "scripts": {
+    "dev": "shopify theme dev --store purebrushstudio.myshopify.com --open",
+    "push": "shopify theme push --store purebrushstudio.myshopify.com",
+    "pull": "shopify theme pull --store purebrushstudio.myshopify.com",
+    "check": "shopify theme check"
+  },
+  "devDependencies": {
+    "@shopify/cli": "^4.8.1"
+  }
+}

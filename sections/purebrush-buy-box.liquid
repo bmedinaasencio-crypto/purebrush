@@ -1,0 +1,470 @@
+{% comment %}
+  Section: Pure Brush Direct Buy Box (High-converting direct checkout block)
+{% endcomment %}
+
+{% assign product = all_products['limpiador-y-secador-electrico-de-brochas-de-maquillaje'] %}
+
+<div id="comprar" class="purebrush-buybox-section">
+  <div class="purebrush-buybox-container">
+    <div class="purebrush-buybox-gallery">
+      <div class="main-image-container">
+        <img 
+          id="purebrush-active-image" 
+          src="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S05c244b4f89645d5babccaa5a7f5eb93s.webp?v=1789690472" 
+          alt="Limpiador Pure Brush" 
+          width="500" 
+          height="500"
+        >
+        <span class="sale-ribbon">50% DTO</span>
+      </div>
+      <div class="thumbnail-strip">
+        <button type="button" class="thumb-btn active" data-img="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S05c244b4f89645d5babccaa5a7f5eb93s.webp?v=1789690472">
+          <img src="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S05c244b4f89645d5babccaa5a7f5eb93s.webp?v=1789690472" alt="Blanco" width="70" height="70">
+        </button>
+        <button type="button" class="thumb-btn" data-img="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S0ada3445a547408eb3731a32c093411fs.webp?v=1789690473">
+          <img src="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S0ada3445a547408eb3731a32c093411fs.webp?v=1789690473" alt="Gris" width="70" height="70">
+        </button>
+        <button type="button" class="thumb-btn" data-img="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S38e01e7595ce4f63ba393d25a761b9c0s.webp?v=1789690472">
+          <img src="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S38e01e7595ce4f63ba393d25a761b9c0s.webp?v=1789690472" alt="Uso" width="70" height="70">
+        </button>
+        <button type="button" class="thumb-btn" data-img="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S421cc3c3fd314b26ae8a8c70968bd6e3D.webp?v=1789690472">
+          <img src="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S421cc3c3fd314b26ae8a8c70968bd6e3D.webp?v=1789690472" alt="Detalle" width="70" height="70">
+        </button>
+      </div>
+    </div>
+
+    <div class="purebrush-buybox-info">
+      <div class="rating-bar">
+        <span class="stars">★★★★★</span>
+        <span class="reviews-count">4.9/5 (1.248 valoraciones verificadas)</span>
+      </div>
+
+      <h2 class="buybox-title">Pure Brush™ - Limpiador y Secador Eléctrico USB</h2>
+
+      <div class="price-row">
+        <span class="main-price">17,90 €</span>
+        <span class="old-price">35,90 €</span>
+        <span class="save-tag">Ahorras 18,00 €</span>
+      </div>
+
+      <div class="stock-warning">
+        <span class="pulse-dot"></span>
+        <span><strong>Gran demanda:</strong> Solo quedan 9 unidades disponibles en este lote.</span>
+      </div>
+
+      <form method="post" action="/cart/add" class="buybox-form" id="purebrush-order-form">
+        <!-- Variant selection -->
+        <div class="variant-section">
+          <label class="variant-label">Selecciona tu color: <strong id="selected-color-name">Blanco</strong></label>
+          <div class="variant-selector-pills">
+            <label class="color-pill active">
+              <input type="radio" name="id" value="57195905352020" checked data-color="Blanco" data-img="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S05c244b4f89645d5babccaa5a7f5eb93s.webp?v=1789690472">
+              <span class="color-swatch white-swatch"></span>
+              <span class="pill-text">Blanco Clásico</span>
+            </label>
+            <label class="color-pill">
+              <input type="radio" name="id" value="57195905384788" data-color="Gris" data-img="https://cdn.shopify.com/s/files/1/1076/3036/2964/files/S0ada3445a547408eb3731a32c093411fs.webp?v=1789690473">
+              <span class="color-swatch gray-swatch"></span>
+              <span class="pill-text">Gris Moderno</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Quantity and CTA -->
+        <div class="cta-actions">
+          <div class="quantity-wrapper">
+            <button type="button" class="qty-btn" id="qty-minus">-</button>
+            <input type="number" name="quantity" id="quantity" value="1" min="1" max="10" readonly>
+            <button type="button" class="qty-btn" id="qty-plus">+</button>
+          </div>
+
+          <button type="submit" class="purebrush-submit-btn" id="purebrush-add-btn">
+            <span class="btn-main-text">AÑADIR AL CARRITO</span>
+            <span class="btn-sub-text">🚚 Envío rápido + Garantía 30 días</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Reassurances list -->
+      <div class="checkout-perks">
+        <div class="perk-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>En stock. Listo para enviar en 24/48 horas.</span>
+        </div>
+        <div class="perk-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Garantía total de devolución de 30 días sin preguntas.</span>
+        </div>
+        <div class="perk-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Incluye cable USB universal y cabezal de silicona multi-brocha.</span>
+        </div>
+      </div>
+
+      <!-- Payment badges -->
+      <div class="payment-guarantee">
+        <small>PAGO SEGURO GARANTIZADO</small>
+        <div class="payment-icons">
+          <span>VISA</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('purebrush-order-form');
+  const activeImg = document.getElementById('purebrush-active-image');
+  const colorName = document.getElementById('selected-color-name');
+  const pills = document.querySelectorAll('.color-pill');
+  const thumbs = document.querySelectorAll('.thumb-btn');
+
+  // Variant change
+  pills.forEach(pill => {
+    pill.addEventListener('click', function() {
+      pills.forEach(p => p.classList.remove('active'));
+      this.classList.add('active');
+      const input = this.querySelector('input');
+      input.checked = true;
+      colorName.textContent = input.dataset.color;
+      if (input.dataset.img && activeImg) {
+        activeImg.src = input.dataset.img;
+      }
+    });
+  });
+
+  // Thumbnail click
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', function() {
+      thumbs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      if (activeImg) {
+        activeImg.src = this.dataset.img;
+      }
+    });
+  });
+
+  // Quantity handlers
+  const qtyInput = document.getElementById('quantity');
+  const plusBtn = document.getElementById('qty-plus');
+  const minusBtn = document.getElementById('qty-minus');
+
+  if (plusBtn && qtyInput) {
+    plusBtn.addEventListener('click', () => {
+      let val = parseInt(qtyInput.value) || 1;
+      if (val < 10) qtyInput.value = val + 1;
+    });
+  }
+  if (minusBtn && qtyInput) {
+    minusBtn.addEventListener('click', () => {
+      let val = parseInt(qtyInput.value) || 1;
+      if (val > 1) qtyInput.value = val - 1;
+    });
+  }
+});
+</script>
+
+<style>
+.purebrush-buybox-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  scroll-margin-top: 80px;
+}
+.purebrush-buybox-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 50px;
+  align-items: start;
+}
+.main-image-container {
+  position: relative;
+  background: #f9fafb;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+.main-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.sale-ribbon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #e11d48;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+.thumbnail-strip {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+.thumb-btn {
+  background: #f9fafb;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.thumb-btn.active, .thumb-btn:hover {
+  border-color: #111827;
+}
+.thumb-btn img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+.purebrush-buybox-info {
+  display: flex;
+  flex-direction: column;
+}
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.rating-bar .stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+}
+.reviews-count {
+  font-size: 0.85rem;
+  color: #4b5563;
+  font-weight: 600;
+}
+.buybox-title {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.main-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111827;
+}
+.old-price {
+  font-size: 1.3rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+.save-tag {
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.stock-warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff1f2;
+  color: #9f1239;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  border: 1px solid #fecdd3;
+}
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e11d48;
+  box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.2);
+}
+.variant-section {
+  margin-bottom: 24px;
+}
+.variant-label {
+  display: block;
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 10px;
+}
+.variant-selector-pills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.color-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.color-pill input {
+  display: none;
+}
+.color-pill.active {
+  border-color: #111827;
+  background: #f9fafb;
+}
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #d1d5db;
+}
+.white-swatch { background: #ffffff; }
+.gray-swatch { background: #4b5563; }
+.pill-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+}
+.cta-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 4px;
+  height: 56px;
+}
+.qty-btn {
+  background: transparent;
+  border: none;
+  width: 38px;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #374151;
+}
+.quantity-wrapper input {
+  width: 38px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111827;
+}
+.purebrush-submit-btn {
+  flex: 1;
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+.purebrush-submit-btn:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+.btn-main-text {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+.btn-sub-text {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+.checkout-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 0;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 20px;
+}
+.perk-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+.payment-guarantee {
+  text-align: center;
+}
+.payment-guarantee small {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.payment-icons span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 850px) {
+  .purebrush-buybox-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "PureBrush Direct Buy Box",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PureBrush Direct Buy Box"
+    }
+  ]
+}
+{% endschema %}

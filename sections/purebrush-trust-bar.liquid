@@ -1,0 +1,123 @@
+{% comment %}
+  Section: Pure Brush Trust Bar
+{% endcomment %}
+
+<div class="purebrush-trust-section" style="background: {{ section.settings.bg_color }};">
+  <div class="purebrush-trust-container">
+    <div class="purebrush-trust-item">
+      <div class="purebrush-trust-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div class="purebrush-trust-text">
+        <strong>Envío Rápido y Seguro</strong>
+        <span>Entrega directa a tu domicilio</span>
+      </div>
+    </div>
+
+    <div class="purebrush-trust-item">
+      <div class="purebrush-trust-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="purebrush-trust-text">
+        <strong>Garantía de 30 Días</strong>
+        <span>Devolución garantizada si no te encanta</span>
+      </div>
+    </div>
+
+    <div class="purebrush-trust-item">
+      <div class="purebrush-trust-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <div class="purebrush-trust-text">
+        <strong>Pago 100% Cifrado</strong>
+        <span>Tarjetas, PayPal y pago protegido</span>
+      </div>
+    </div>
+
+    <div class="purebrush-trust-item">
+      <div class="purebrush-trust-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="purebrush-trust-text">
+        <strong>Atención Personalizada</strong>
+        <span>Soporte rápido en español</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.purebrush-trust-section {
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  padding: 24px 20px;
+}
+.purebrush-trust-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.purebrush-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.purebrush-trust-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+  flex-shrink: 0;
+  border: 1px solid #e5e7eb;
+}
+.purebrush-trust-text strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #111827;
+  line-height: 1.25;
+}
+.purebrush-trust-text span {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .purebrush-trust-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .purebrush-trust-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "PureBrush Trust Bar",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Color de fondo",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PureBrush Trust Bar"
+    }
+  ]
+}
+{% endschema %}

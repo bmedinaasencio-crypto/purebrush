@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "purebrush_hero": {
+      "type": "purebrush-hero",
+      "settings": {
+        "bg_color": "#ffffff",
+        "text_color": "#111827"
+      }
+    },
+    "purebrush_trust_bar": {
+      "type": "purebrush-trust-bar",
+      "settings": {
+        "bg_color": "#ffffff"
+      }
+    },
+    "purebrush_buy_box": {
+      "type": "purebrush-buy-box",
+      "settings": {}
+    },
+    "purebrush_features": {
+      "type": "purebrush-features",
+      "settings": {}
+    },
+    "purebrush_how_it_works": {
+      "type": "purebrush-how-it-works",
+      "settings": {}
+    },
+    "purebrush_reviews": {
+      "type": "purebrush-reviews",
+      "settings": {}
+    },
+    "purebrush_faq": {
+      "type": "purebrush-faq",
+      "settings": {}
+    }
+  },
+  "order": [
+    "purebrush_hero",
+    "purebrush_trust_bar",
+    "purebrush_buy_box",
+    "purebrush_features",
+    "purebrush_how_it_works",
+    "purebrush_reviews",
+    "purebrush_faq"
+  ]
+}
