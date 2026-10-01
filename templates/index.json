@@ -21,6 +21,32 @@
       "type": "purebrush-features",
       "settings": {}
     },
+    "purebrush_videos": {
+      "type": "purebrush-videos",
+      "blocks": {
+        "video_destacado": {
+          "type": "video_item",
+          "settings": {
+            "title": "Demostración Real: Probando el Limpiador Automático",
+            "caption": "Mira en directo cómo disuelve el maquillaje y deja la brocha impecable sin esfuerzo.",
+            "video_url": "https://www.youtube.com/shorts/S1qQPVfC14A",
+            "tag": "100% EN ESPAÑOL",
+            "duration": "0:45"
+          }
+        }
+      },
+      "block_order": [
+        "video_destacado"
+      ],
+      "settings": {
+        "badge": "DEMOSTRACIÓN REAL EN VÍDEO",
+        "heading": "Míralo en Acción: Limpieza y Secado en 30 Segundos",
+        "subheading": "Demostración real del limpiador eléctrico Pure Brush: cómodo, rápido y sin salpicaduras.",
+        "bg_color": "#ffffff",
+        "cta_text": "QUIERO PROBARLO AHORA - 17,90 €",
+        "cta_link": "#comprar"
+      }
+    },
     "purebrush_how_it_works": {
       "type": "purebrush-how-it-works",
       "settings": {}
@@ -39,6 +65,7 @@
     "purebrush_trust_bar",
     "purebrush_buy_box",
     "purebrush_features",
+    "purebrush_videos",
     "purebrush_how_it_works",
     "purebrush_reviews",
     "purebrush_faq"

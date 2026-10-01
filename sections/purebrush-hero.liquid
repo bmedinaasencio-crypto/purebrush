@@ -48,6 +48,10 @@
           <span>PEDIR AHORA CON 50% DTO.</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
+        <a href="#videos-producto" class="purebrush-btn-video">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <span>Ver vídeo en acción</span>
+        </a>
       </div>
 
       <div class="purebrush-guarantees-mini">
@@ -67,6 +71,15 @@
           width="600"
           height="600"
         >
+        <a href="#videos-producto" class="purebrush-floating-video-badge" aria-label="Ver vídeos demostración">
+          <span class="video-badge-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span class="video-badge-text">
+            <strong>Vídeo en Acción</strong>
+            <small>Demostración 30s</small>
+          </span>
+        </a>
       </div>
     </div>
   </div>
@@ -178,6 +191,10 @@
 }
 .purebrush-hero-cta {
   margin-bottom: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .purebrush-btn-primary {
   display: inline-flex;
@@ -191,11 +208,30 @@
   font-weight: 700;
   padding: 16px 36px;
   border-radius: 12px;
-  width: 100%;
-  max-width: 420px;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
   transition: all 0.25s ease;
   cursor: pointer;
+}
+.purebrush-btn-video {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fdf2f4;
+  color: #e11d48 !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 1px solid #fecdd3;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.purebrush-btn-video:hover {
+  background: #ffe4e6;
+  transform: translateY(-2px);
+  color: #be123c !important;
 }
 .purebrush-btn-primary:hover {
   transform: translateY(-2px);
@@ -256,6 +292,52 @@
 .purebrush-floating-badge small {
   display: block;
   font-size: 0.75rem;
+  color: #6b7280;
+}
+.purebrush-floating-video-badge {
+  position: absolute;
+  bottom: 24px;
+  right: -15px;
+  background: #ffffff;
+  padding: 10px 16px;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #fce7eb;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 5;
+}
+.purebrush-floating-video-badge:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(225, 29, 72, 0.2);
+}
+.purebrush-floating-video-badge .video-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e11d48;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.purebrush-floating-video-badge .video-badge-icon svg {
+  margin-left: 2px;
+}
+.purebrush-floating-video-badge .video-badge-text strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+}
+.purebrush-floating-video-badge .video-badge-text small {
+  display: block;
+  font-size: 0.72rem;
   color: #6b7280;
 }
 
